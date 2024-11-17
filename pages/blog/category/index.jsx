@@ -8,23 +8,23 @@ export default function CategoriesPage({ categories }) {
   return (
     <Layout>
       <Head>
-        <title>Popular Blog Categories | Your Blog Name</title>
+        <title>Popular Blog Categories | Doic Neon</title>
         <meta name="description" content="Explore our most popular and frequently visited blog categories, covering a variety of topics that our readers love." />
         <meta name="keywords" content="blog categories, popular blog topics, blog topics, category list, blog" />
-        <link rel="canonical" href="https://yourdomain.com/blog/categories" />
+        <link rel="canonical" href="https://doic-neon.vercel.app/blog/categories" />
         
         {/* Open Graph Tags */}
         <meta property="og:title" content="Popular Blog Categories | Your Blog Name" />
         <meta property="og:description" content="Explore our most popular and frequently visited blog categories." />
-        <meta property="og:url" content="https://yourdomain.com/blog/categories" />
+        <meta property="og:url" content="https://doic-neon.vercel.app/blog/categories" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://yourdomain.com/your-image.jpg" />
+        <meta property="og:image" content="https://doic-neon.vercel.app/your-image.jpg" />
 
         {/* Twitter Card Tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Popular Blog Categories | Your Blog Name" />
         <meta name="twitter:description" content="Explore our most popular and frequently visited blog categories." />
-        <meta name="twitter:image" content="https://yourdomain.com/your-image.jpg" />
+        <meta name="twitter:image" content="https://doic-neon.vercel.app/your-image.jpg" />
 
         {/* Breadcrumb Structured Data */}
         <script type="application/ld+json">
@@ -36,26 +36,26 @@ export default function CategoriesPage({ categories }) {
                 "@type": "ListItem",
                 "position": 1,
                 "name": "Home",
-                "item": "https://yourdomain.com/"
+                "item": "https://doic-neon.vercel.app/"
               },
               {
                 "@type": "ListItem",
                 "position": 2,
                 "name": "Blog",
-                "item": "https://yourdomain.com/blog"
+                "item": "https://doic-neon.vercel.app/blog"
               },
               {
                 "@type": "ListItem",
                 "position": 3,
                 "name": "Categories",
-                "item": "https://yourdomain.com/blog/categories"
+                "item": "https://doic-neon.vercel.app/blog/categories"
               }
             ]
           })}
         </script>
       </Head>
 
-      <div className="max-w-4xl mx-auto p-6">
+      <div className="max-w-4xl mx-auto px-6 py-6 md:pt-12">
         <nav className="text-sm dark:text-gray-300 text-gray-500 mb-4">
           <Link href="/">
             <span className="hover:underline">Home</span>
@@ -68,7 +68,7 @@ export default function CategoriesPage({ categories }) {
           <span className="hover:underline">Categories</span>
         </nav>
         
-        <h1 className="text-3xl font-bold text-center mb-6">Categories</h1>
+        <h1 className="text-3xl font-bold text-center mb-6 play">Categories</h1>
         <p>Explore our most popular and frequently visited categories:</p>
         
         <ul className="space-y-4">

@@ -7,6 +7,7 @@ import path from "path";
 import Layout from "@/components/Layout";
 import { format } from "date-fns";
 import Link from "next/link";
+import SearchForm from "@/components/SearchForm";
 export default function SearchResultsPage({ blogs }) {
   const [filteredBlogs, setFilteredBlogs] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -29,17 +30,20 @@ export default function SearchResultsPage({ blogs }) {
   return (
     <Layout>
 
-    <div className="max-w-4xl mx-auto px-4 py-8">
+    <div className="max-w-4xl mx-auto px-6 py-8">
+    <SearchForm/>
       <h1 className="text-2xl font-bold mb-4">Search Results</h1>
       {loading ? (
         <p>Loading...</p>
       ) : (
+        <>
+        
         <div className="grid lg:grid-cols-2 gap-4">
           {filteredBlogs.length > 0 ? (
             filteredBlogs.map((blog, index) => (
               <Link key={blog.id} href={`/blog/${blog.title.replace(/\s+/g, '-').toLowerCase()}`}>
 
-              <div key={index} className="my-3 py-2 border-b border-gray-200">
+              <div key={index} className="my- py-2 border-b pb-4 border-gray-200">
                 <h2 className="text-xl underline font-semibold">{blog.title}</h2>
                 <p className="my-3">{blog.description}</p>
 
@@ -59,6 +63,7 @@ export default function SearchResultsPage({ blogs }) {
             <p>No results found.</p>
           )}
         </div>
+        </>
       )}
     </div>
     </Layout>

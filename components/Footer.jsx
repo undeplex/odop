@@ -7,10 +7,10 @@ export default function Footer() {
   return (
     <>
     
-    <div className="w-full cen content-center items-center ce justify-center place-items-center place-content-center object-center justify-items-center relative zoom-in-100 bor-[0px] bg-black text-white pt-5 lg:pb-5 md:pb-5 pb-5 px-4 ">
-      <div className="max-w-4xl mx-auto">
+    <div className="w-full cen content-center items-center  justify-center place-items-center place-content-center object-center justify-items-center relative zoom-in-100 bor-[0px] bg-black text-white py-6 px-6 ">
+      <div className="max-w-4xl mx-auto ">
 
-        <div className="grid text-left    grid-cols-1 sm:grid-cols-2 md:grid-cols- sm:gap-7 gap-5 lg:grid-cols-3">
+        <div className="grid text-left grid-cols-1 sm:grid-cols-2 md:grid-cols- sm:gap-7 gap-5 lg:grid-cols-3">
           <div className="st text-left">
 
                 
@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
           <div>
             <ul className="text-left ">
-              <li className="list-none text-gray-200 bo fon-bold">Liens Rapides</li>
+              <li className="list-none text-gray-200">Liens Rapides</li>
               <Link href="/">
               
                 <li className="list-none text-gray-500 my-1">Acceuil</li>
@@ -43,9 +43,9 @@ export default function Footer() {
 
             </ul>
           </div>
-      <div className=" w-max sm:mx-auto -10 mb-14 sm:mb-9">
+      <div className=" w-max sm:mx-auto  sm:mb-9">
         <p>Copyright reserved 2024</p>
-        Cooked with ❤ By Doic's <i className="text-sm underline-offset-4">Creative</i>
+        Cooked with ❤ By Doic's <i className="text-sm  text-blue-600">Neon</i>
       </div>
         
 

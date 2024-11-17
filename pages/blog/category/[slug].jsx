@@ -30,7 +30,7 @@ export async function getStaticProps({ params }) {
 }
 
 const CategoryPage = ({ category, posts }) => {
-  const categoryTitle = `${category.charAt(0).toUpperCase() + category.slice(1)} Articles`;
+  const categoryTitle = `Blog sur ${category.charAt(0).toUpperCase() + category.slice(1)} `;
   const pageTitle = `${categoryTitle} - My Blog`; // Customize with your blog's name
   const pageDescription = `Explore insightful articles on ${category} from our blog. Stay updated with our latest content.`;
   const pageUrl = `https://yourwebsite.com/blog/category/${category}`; // Update with your domain
@@ -90,7 +90,7 @@ const CategoryPage = ({ category, posts }) => {
         ))}
       </Head>
 
-      <div className="max-w-7xl mx-auto pt-12 px-4">
+      <div className="max-w-7xl mx-auto pt-12 px-6">
         <nav className="text-sm dark:text-gray-300 text-gray-500 mb-4">
           <Link href="/">
             <span className="hover:underline">Home</span>
@@ -107,7 +107,7 @@ const CategoryPage = ({ category, posts }) => {
           <span className="hover:underline">{category}</span>
         </nav>
         
-        <h1 className="text-3xl font-bold text-center mb-6">{categoryTitle}</h1>
+        <h1 className="text-3xl font-bold text-center mb-6 play">{categoryTitle}</h1>
         
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {posts.map((blog) => (

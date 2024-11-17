@@ -27,6 +27,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import { BookmarkIcon, BookmarkSlashIcon, EyeIcon } from '@heroicons/react/24/outline';
 import Sidebar from '@/components/Sidebar';
 import LoaderMe from '@/components/LoaderMe';
+import SingleBlog from '@/components/SingleBlog';
 // Import Clipboard only on client-side
 const Clipboard = dynamic(() => import('clipboard'), { ssr: false });
 // Helper function to calculate time elapsed
@@ -131,7 +132,6 @@ const BlogPost = ({ blog, contentHtml, relatedBlogs,relatedPostsByAuthor }) => {
   }, []);
 
 
-  const [loading, setLoading] = useState(true);
 
 useEffect(() => {
   setLoading(false); // Update to false after content is fully loaded
@@ -187,8 +187,23 @@ useEffect(() => {
 const enhancedContentHtml = contentHtml.replace(
   /<pre><code([\s\S]*?)<\/code><\/pre>/g,
   (match) =>
-    `<div class="relative group">${match}<button class="copy-btn absolute top-2 right-2 bg-blue-500 text-white text-sm px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Copy</button></div>`
+    `<div class="relative  group">${match}<button  class="text-[12px] flex items-center copy-btn absolute top-2 right-2 bg-gray-700 bg-opacity-  text-gray-200 gap- px-2 py-1 rounded opacity-100 group-hover:opacity-100 transition-opacity">
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.666 3.888A2.25 2.25 0 0 0 13.5 2.25h-3c-1.03 0-1.9.693-2.166 1.638m7.332 0c.055.194.084.4.084.612v0a.75.75 0 0 1-.75.75H9a.75.75 0 0 1-.75-.75v0c0-.212.03-.418.084-.612m7.332 0c.646.049 1.288.11 1.927.184 1.1.128 1.907 1.077 1.907 2.185V19.5a2.25 2.25 0 0 1-2.25 2.25H6.75A2.25 2.25 0 0 1 4.5 19.5V6.257c0-1.108.806-2.057 1.907-2.185a48.208 48.208 0 0 1 1.927-.184" />
+  </svg>Copy
+
+  </button></div>`
 );
+const [loading, setLoading] = useState(true);
+
+// Simulate loading effect for testing
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setLoading(false); // Stop loading after 2 seconds
+  }, 2000);
+
+  return () => clearTimeout(timer); // Clean up the timer
+}, []);
 
 return (
 
@@ -275,19 +290,13 @@ return (
 </script> 
 
 
-
-
-       {/* TOC Component */}
-
- {/* Progress Bar */}
  <div
       style={{ width: `${scrollProgress}%` }}
       className="fixed top-0 left-0 h-1 bg-blue-500 z-50"
     />
     {loading ? (<SkeletonLoader/>):(
 
-
-<div className="max-w-7xl mx-auto px-4  bg-red-5 grid grid-cols-1 md:grid-cols-3 smbg-red-100 lg:grid-cols-4 gap-8"> 
+<div className="max-w-7xl mx-auto px-6  bg-red-5 grid grid-cols-1 md:grid-cols-3 smbg-red-100 lg:grid-cols-4 gap-8"> 
   <div className="relative bg">
 <div className="fixed sm   lg:w-[20%] md:w-[30%] pt-4  overflow-hidden ">
 
@@ -351,11 +360,12 @@ onClick={() => addToReadLater(blog.id)}
         {/* Tags Section */}
         <span className=" text-gray-200 flex gap-2 items-center">{views} <Eye/></span>
         </div>
-
-        <div className="flex gap-2 mb-6">
+     Tags
+        <div className="flex flex-wrap space-y-1 my-4 gap-2">
           {tags.map((tag) => (
             <Link key={tag} href={`/tags/${tag}`}>
-              <span className="bg-gray- dark:text-gray-100 rounded-full text-gray-800 px-3 py-1  border-2 border-gray-400 hover:bg-gray-300">{tag}</span>
+              
+              <span className="bg-gray my-4 text-sm dark:text-gray-100 rounded-full text-gray-800 px-3 py-1  border border-gray-400 hover:border-blue-600 hover:text-blue-600">{tag}</span>
             </Link>
           ))}
         </div>
@@ -456,33 +466,10 @@ onClick={() => addToReadLater(blog.id)}
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {relatedBlogs.slice(0,3).map((blog) => (
-            <Link key={blog.id} href={`/blog/${blog.title.replace(/\s+/g, '-').toLowerCase()}`}>
-              <div className="group">
-
-                    <img
-                      src={blog.image}
-                      alt={blog.title}
-                      className="w-full h-[150px] rounded-xl object-cover mb-4"
-                    />
-                
-                <p className="text-2xl font-bold play group-hover:underline">{blog.title}</p>
-                <div className="text-gray-600 my-2 dark:text-gray-300 text-sm">{format(new Date(blog.date), 'MMMM dd, yyyy')}</div>
-                <div className="flex gap-2 items-center justify-between">
-                  <p className="flex items-center gap-2">
-
-                  <img src={blog.authorImage} width="34" className="rounded-full ring-2  object-cover"/>
-                  <span className="dark:text-gray-50 text-gray-700">{blog.author}</span>
-                  </p>
-                  <div className="text-sm text-blue-500 mb-1">{blog.category}</div>
-
-                </div>
-              </div>
-              {/* <p className="flex items-center gap-2">
-                <Clock className="size-5" /> {calculateReadingTime(blog.content)}
-              </p> */}
-            </Link>
+            <SingleBlog blog={blog}/>
           ))}
         </div>
+        
 
         <div className="mt-10" >
           <div className="text-3xl mb-4 play">Commentaire</div>
@@ -506,9 +493,8 @@ onClick={() => addToReadLater(blog.id)}
 export default BlogPost;
 const SkeletonLoader = () => (
   <div className="max-w-7xl mx-auto h-screen grid place-content-center">
-<div className="scale-150">
+<div className="scale-150 iphone-loader">
   
-  <LoaderMe/>
 </div>
   </div>
 );

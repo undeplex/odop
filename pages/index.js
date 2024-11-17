@@ -13,7 +13,7 @@ import SubscribeForm from '@/components/SubscribeForm';
 import MostViewedBlogs from '@/components/MostViewedBlogs';
 import Link from 'next/link';
 import AnimatedText from '@/components/AnimatedText';
-import { GlobeEuropeAfricaIcon } from '@heroicons/react/24/outline';
+import { ChatBubbleBottomCenterIcon, GlobeEuropeAfricaIcon } from '@heroicons/react/24/outline';
 import { ArrowDown } from 'lucide-react';
 import Profiler from '@/components/Profiler';
 
@@ -135,7 +135,7 @@ export default function Blogs({ recentPosts, featuredPosts, mostViewedPosts }) {
 
       {/* Page Content */}
       <div className="max-w-7xl mx-auto pt-8">
-        <div className="px-3 bg-red-5">
+        <div className="px-6 dark:bg-blue-500 dark:bg-opacity-5 bg-teal-500 bg-opacity-10 py-3 my-2">
 {/* <AnimatedText/> */}
 
         <h1 className="md:text-5xl text-4xl font-bold text-center  play">Grow,Learn and have fun Reading on
@@ -144,7 +144,7 @@ export default function Blogs({ recentPosts, featuredPosts, mostViewedPosts }) {
           
            </h1>
         <p className=" break-al text-center md:text-xl dark:text-gray-200 my-4 md:w-8/12 mx-auto">
-          Just in time pour decouvrir des trendy topics pour Booster votre every day, avec des blogs orienter educations et overall growth, we're also project focus 'cause we really are all about tangible result 
+            Less Theory,countless project based Blogs , Doic Neon is all about results & tangible ware, So Let's Do it
         </p>
         <div className="flex flex-col md:flex-row w-max mx-auto gap-6">
 
@@ -158,7 +158,9 @@ export default function Blogs({ recentPosts, featuredPosts, mostViewedPosts }) {
         </button>
         </Link>
         <Link href="/">
-        <button className=" text-gray-950 dark:text-gray-200 border-2 px-5 py-3 rounded-full mx-auto  block mb-4">Nous contacter</button>
+        <button className=" text-gray-950 dark:border-gray-300 border-gray-700 dark:text-gray-200 border px-5 py-3 rounded-full mx-auto  block mb-4">
+          Nous proposer un sujet <ChatBubbleBottomCenterIcon className="size-5 inline"/>
+          </button>
         </Link>
         </div>
         </div>
@@ -180,7 +182,7 @@ export default function Blogs({ recentPosts, featuredPosts, mostViewedPosts }) {
               <h1 className="text-4xl font-bold text-center mb-6 play">Recent Blogs (Last 5 Days)</h1>
      
 
-        <div className="grid px-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid px-6 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {recentPosts.map(post => (
             <RecentPost key={post.id} post={post} />
           ))}
@@ -191,10 +193,10 @@ export default function Blogs({ recentPosts, featuredPosts, mostViewedPosts }) {
           Explore categories that might interest you as they are frequently visited.
         </p>
         <PopCat categories={categories} />
-        <div className="px-4">
+        <div className="px-6">
            <Profiler/>
         </div>
-        <div className="px-4">
+        <div className="px-6">
             <SubscribeForm />
         </div>
       </div>

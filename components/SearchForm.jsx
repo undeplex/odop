@@ -18,7 +18,7 @@ export default function SearchForm() {
     <form onSubmit={handleSearch} className="flex mb-4">
       <input
         type="text"
-        className="bg-transparent"
+        className="bg-transparent border-none"
         placeholder="Type to search"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}

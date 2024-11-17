@@ -75,20 +75,20 @@ const TagPage = ({ tag, filteredBlogs }) => {
         ))}
       </Head>
 
-      <div className="max-w-7xl px-4 mx-auto pt-12">
+      <div className="max-w-7xl px-6 pb-4 mx-auto pt-9">
         <nav className="text-sm dark:text-gray-300 text-gray-500 mb-4">
           <Link href="/">
             <span className="hover:underline">Home</span>
           </Link>
           {' / '}
-          <Link href="/blog">
+          <Link href="/tags">
             <span className="hover:underline">Tags</span>
           </Link>
           {' / '}
           <span className="hover:underline">{tag}</span>
         </nav>
 
-        <h1 className="text-3xl mb-6">Posts tagged with "{tag}"</h1>
+        <h1 className="text-3xl mb-6 play">Posts tagged with "{tag}"</h1>
 
         {filteredBlogs.map(blog => (
          <SingleBlog blog={blog}/>

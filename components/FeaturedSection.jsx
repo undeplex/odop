@@ -136,7 +136,7 @@ const FeaturedSection = ({ featuredPosts }) => {
 
             </div>
           </Link>
-          <div className=" block  sm:hidden px-4">
+          <div className=" block  sm:hidden px-6">
             <h1 className="play dark:text-gray-00 text-2xl font-bold text-left mt-4">{mainPost.title}</h1>  
             <p className="text-gray-600 mt-2 text-left dark:text-slate-100">
 
@@ -177,7 +177,7 @@ const FeaturedSection = ({ featuredPosts }) => {
 
 
         <h1 className="text-4xl font-bold text-center my-5 play">Nos Articles le plus populaires </h1>
-        <div className="grid px-4 grid-cols-1 text-left gap-6 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid px-6 grid-cols-1 text-left gap-6 md:grid-cols-3 sm:grid-cols-2 lg:grid-cols-4">
         {sidePosts.map((post, index) => ( 
             // <div key={index} className="group dark:text-gray-500">
             //   <Link href={`/blog/${post.title.replace(/\s+/g, '-').toLowerCase()}`} passHref>

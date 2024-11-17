@@ -7,7 +7,7 @@ export default function Faq() {
     setActiveIndex(activeIndex === index ? null : index);
   };
   return (
-    <div className="max-w-4xl mx-auto bg-white p-1 my-4 rounded-2xl">
+    <div className="max-w-4xl mx-auto bg-white p-1sss my-4 rounded-2xl">
         <h1 className="text-4xl play text-center my-6 font-bold ">FAQ</h1>
                   <div className="">
         {[

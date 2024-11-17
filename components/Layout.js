@@ -19,10 +19,10 @@ export default function Layout({ children }) {
        
                
                 <div className=" lg:hidden md:hidden w-full flex gap-2 px-2 items-center my-2 justify-between ">
-                    <div className="flex gap-4 items-center w-full bg-red-5 justify-between">
+                    <div className="flex  px-4 gap-4 items-center w-full bg-red-5 justify-between">
                     <MobileMenu/>
                     <Link href="/search">
-                    <Search className="text-gray-700 dark:text-gray-100 size-7"/>
+                    <Search className="text-gray-700 dark:text-gray-100 size-6"/>
                     </Link>
                   
 
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
                     <div className="dark:text-white flex justify-center play my-2 items-center  max-w w-max mx-auto ">
                     <Link href="/">
                         <img className="w-[72px] dark:invert" src="/doic.svg"/>
-                    </Link><span>Blog</span>
+                    </Link><span>Neon</span>
                        
                     </div>
                     <>
@@ -75,7 +75,7 @@ export default function Layout({ children }) {
                     <Link href="/blog/category">Category</Link>
                     </div>
                        <div className="flex w-max text-lg mx-auto mt-2 items-center gap-2 ">
-                    <Link href="/testme">newsLetter</Link>
+                    <Link href="/contact">Contact</Link>
                     </div>
                        <div className="flex w-max text-lg  mx-auto mt-2 items-center gap-2 ">
                     <Link href="/read-later">Read Later</Link>
