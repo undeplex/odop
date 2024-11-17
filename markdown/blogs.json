@@ -1,0 +1,146 @@
+[
+    {
+      "id": "1",
+      "featured":true,
+      "element":false,
+      "views":40,
+      "title": "Apprendre a utiliser PowerShel comme AdminSys.(Parti 1)",
+      "author": "Peter Nzan",
+      "authorImage": "/profiler2.jpg",
+      "category": "Informatique",
+      "description": "PowerShell est un outil d'administration système et un langage de script basé sur .NET, permettant de gérer des tâches administratives dans des environnements Windows et Azure, et plus encore.  ",
+      "date": "2024-10-20T00:00:00Z",
+      "image": "/plause10.jpg",
+      "markdownFile": "blog1.md",
+      "tags": ["PowerShel", "System Admin","Automation"]
+    },
+    {
+      "id": "2",
+      "featured":false,
+      "element":false,
+      "views":80,
+      "title": "What happen to that boy called Peter or some ,ain't he",
+      "author": "Patrich Lindeutch",
+      "authorImage": "/profil.jpeg",
+      "category": "Tech",
+      "description": "How to optimize your site for search engines.",
+      "date": "2024-10-20T00:00:00Z",
+      "image": "/plause3.png",
+      "markdownFile": "blog2.md",
+      "tags": ["trash", "online", "website"]
+    }
+      ,
+      {
+        "id": "3",
+        "featured":true,
+        "element":false,
+        "views":120,
+        "title": "Installation et configuration de Docker sur Linux ( Ubuntu )",
+        "author": "Peter Nzan",
+        "authorImage": "/profil.jpeg",
+        "category": "Informatique",
+        "description": "Voici un guide en Markdown pour installer et configurer Docker, et installer des conteneurs sur un système Linux.",
+        "date": "2024-10-20T00:00:00Z",
+        "image": "/blog/docker2.png",
+        "markdownFile": "blog2.md",
+        "tags": ["linux", "docker", "devops"]
+      }
+      ,
+      {
+        "id": "4",
+        "featured":true,
+        "element":false,
+        "views":430,
+        "title": "Set By Step guide pour monter un serveur Local sur une distros base sur Debian",
+        "author": "Patrich Lind",
+        "authorImage": "/profil.jpeg",
+        "category": "Marketing",
+        "description": "pourquoi est ce un probleme pas tres au point de faire une analyse de tous les melotons qui sont dans un endroit tres specifique",
+        "date": "2024-11-10T00:00:00Z",
+        "image": "/plause6.jpg",
+        "markdownFile": "blog2.md",
+        "tags": ["money",  "website"]
+      }
+     
+      ,
+      {
+        "id": "6",
+        "featured":false,
+        "element":false,
+        "views":900,
+        "title": "Quels sont les risques cachees derniere la programation sans echec ",
+        "author": "Granier Ludovic",
+        "authorImage": "/cmt/img2.jpg",
+        "category": "Marketing",
+        "description": "How far do we have to go to make it ?",
+        "date": "2024-11-11T00:00:00Z",
+        "image": "/plause7.jpg",
+        "markdownFile": "blog2.md",
+        "tags": ["money", "online", "measure"]
+      }
+      ,
+      {
+        "id": "7",
+        "featured":true,
+        "element":false,
+        "views":10,
+        "title": "This will let you be what you're suppose to",
+        "author": "Jean Marie Clock",
+        "authorImage": "/cmt/img3.jpg",
+        "category": "Marketing",
+        "description": "De nos jours il est tres commun de faire un Olx43 operation utiilisant un reseau de neurone mais quelle sont les risques?",
+        "date": "2024-11-14T00:00:00Z",
+        "image": "/plause5.jpg",
+        "markdownFile": "blog2.md",
+        "tags": ["money", "online", "measure"]
+      }
+      ,
+      {
+        "id": "5",
+        "featured":false,
+        "element":false,
+        "views":123,
+        "title": "Is it possible to let so faster",
+        "author": "Petro LeMango",
+        "authorImage": "/cmt/img11.jpg",
+        "category": "LifeStyle",
+        "description": "Sometimes we've gotten to beat the odds in order to go for more",
+        "date": "2024-10-09T00:00:00Z",
+        "image": "/plause8.jpg",
+        "markdownFile": "blog2.md",
+        "tags": ["well-being", "life", "peacefullLife"]
+      }
+      ,
+      {
+        "id": "8",
+        "featured":true,
+        "element":false,
+        "views":945,
+        "title": "Quelle sont les risques deriere la revision et configuration des serveurs Xnt",
+        "author": "Petro LeMango",
+        "authorImage": "/cmt/img11.jpg",
+        "category": "LifeStyle",
+        "description": "If ever you try to represent what you really are about, you should keep yourself accountable as nothing come for nothing",
+        "date": "2024-10-09T00:00:00Z",
+        "image": "/plause10.jpg",
+        "markdownFile": "blog2.md",
+        "tags": ["well-being", "life", "peacefullLife"]
+      }
+      ,
+      {
+        "id": "9",
+        "featured":false,
+        "element":false,
+        "views":919,
+        "title": "Good now for what ",
+        "author": "Patrich Lindeutch",
+        "authorImage": "/cmt/img11.jpg",
+        "category": "LifeStyle",
+        "description": "It might seems to be counterintuitive to say that ",
+        "date": "2024-08-09T00:00:00Z",
+        "image": "/plause9.jpg",
+        "markdownFile": "blog2.md",
+        "tags": ["well-being", "life", "money"]
+      }
+      
+    ]

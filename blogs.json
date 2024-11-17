@@ -1,0 +1,79 @@
+[
+  {
+    "id": "1",
+    "title": "Comment faire pour changer le background avec expiration en Licence",
+    "author": "John Doe",
+    "authorImage": "/cmt/img5.jpg",
+    "category": "Tech",
+    "description": "Aujourdhui dans ce blog on verra le moyen le plus efficace de changer le bg sans avoir a renouveller une licence d'un ordinateur qui marche avec le systeme Big-scors ,car c'est money courant de voir sa licence expirer avant de prendre le temps de tous mettre en place",
+    "date": "2024-11-10",
+    "image": "/plause2.png",
+    "markdownFile": "blog1.md",
+    "tags": ["trash", "online"]
+  },
+  {
+    "id": "2",
+    "title": "What happen to that boy called Peter or some ,ain't he",
+    "author": "Jane Smith",
+    "authorImage": "/profil.jpeg",
+    "category": "Tech",
+    "description": "How to optimize your site for search engines.",
+    "date": "2024-10-20",
+    "image": "/plause3.png",
+    "markdownFile": "blog2.md",
+    "tags": ["trash", "online", "website"]
+  }
+    ,
+    {
+      "id": "3",
+      "title": "What are they going to be needing",
+      "author": "Brianna glaurios",
+      "authorImage": "/profil.jpeg",
+      "category": "Marketing",
+      "description": "How far do we have to go to make it ?",
+      "date": "2024-10-20",
+      "image": "/plause1.png",
+      "markdownFile": "blog2.md",
+      "tags": ["money", "online", "website"]
+    }
+    ,
+    {
+      "id": "4",
+      "title": "Don't be so shy about what you reallyy like",
+      "author": "Brianna glaurios",
+      "authorImage": "/profil.jpeg",
+      "category": "Marketing",
+      "description": "How far do we have to go to make it ?",
+      "date": "2024-10-20",
+      "image": "/plause6.jpg",
+      "markdownFile": "blog2.md",
+      "tags": ["money",  "website"]
+    }
+   
+    ,
+    {
+      "id": "6",
+      "title": "How to make it looks glorious ",
+      "author": "Brianna glaurios",
+      "authorImage": "/cmt/img2.jpg",
+      "category": "Marketing",
+      "description": "How far do we have to go to make it ?",
+      "date": "2024-10-20",
+      "image": "/plause7.jpg",
+      "markdownFile": "blog2.md",
+      "tags": ["money", "online", "measure"]
+    }
+    ,
+    {
+      "id": "7",
+      "title": "This will let you be what you're suppose to be (Klinx insight)",
+      "author": "Brianna glaurios",
+      "authorImage": "/cmt/img3.jpg",
+      "category": "Marketing",
+      "description": "How far do we have to go to make it ?",
+      "date": "2024-11-10",
+      "image": "/plause5.jpg",
+      "markdownFile": "blog2.md",
+      "tags": ["money", "online", "measure"]
+    }
+  ]
