@@ -365,7 +365,7 @@ onClick={() => addToReadLater(blog.id)}
           {tags.map((tag) => (
             <Link key={tag} href={`/tags/${tag}`}>
               
-              <span className="bg-gray my-4 text-sm dark:text-gray-100 rounded-full text-gray-800 px-3 py-1  border border-gray-400 hover:border-blue-600 hover:text-blue-600">{tag}</span>
+              <span className="bg-gray my-4 text-sm dark:dark:text-gray-100  rounded-full text-gray-800 px-3 py-1  border border-gray-400 hover:border-blue-600 hover:text-blue-600">{tag}</span>
             </Link>
           ))}
         </div>
@@ -411,16 +411,16 @@ onClick={() => addToReadLater(blog.id)}
         <div className="flex gap-7  mt-4 mx-auto w-max">
 
 
-          <a href={shareLinks.facebook} target="_blank" rel="noopener noreferrer" className="text-gray-100">
+          <a href={shareLinks.facebook} target="_blank" rel="noopener noreferrer" className="dark:text-gray-100 ">
             <FaFacebook size={24} />
           </a>
-          <a href={shareLinks.twitter} target="_blank" rel="noopener noreferrer" className="text-gray-100">
+          <a href={shareLinks.twitter} target="_blank" rel="noopener noreferrer" className="dark:text-gray-100 ">
             <FaTwitter size={24} />
           </a>
-          <a href={shareLinks.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-100">
+          <a href={shareLinks.linkedin} target="_blank" rel="noopener noreferrer" className="dark:text-gray-100 ">
             <FaLinkedin size={24} />
           </a>
-          <a href={shareLinks.pinterest} target="_blank" rel="noopener noreferrer" className="text-gray-100">
+          <a href={shareLinks.pinterest} target="_blank" rel="noopener noreferrer" className="dark:text-gray-100 ">
             <FaPinterest size={24} />
           </a>
         </div>
