@@ -119,7 +119,7 @@ const SingleBlog = ({ blog }) => {
         </div>
 
         <div className="text-gray-600 flex justify-between mt-3 dark:text-gray-300 text-sm">
-          <div>Publish on {format(new Date(blog.date), 'MMMM dd, yyyy')}</div>
+          <div>{format(new Date(blog.date), 'MMMM dd, yyyy')}</div>
           <p className="flex items-center gap-2">{calculateReadingTime(blog.content)}</p>
         </div>
       </Link>
