@@ -78,11 +78,7 @@ export default function TagsPage({ tags }) {
       
         </p>
         <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fit, minmax(120px, 1fr))',
-            gap: '15px',
-          }}
+       className="flex flex-wrap gap-3 space-y-3 "
         >
           {tags.map((tag, index) => (
             <Link  href={`/tags/${tag}`}>
