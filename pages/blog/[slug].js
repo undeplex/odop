@@ -108,7 +108,7 @@ const BlogPost = ({ blog, contentHtml, relatedBlogs,relatedPostsByAuthor }) => {
   }, [date]);
 
   const router = useRouter();
-  const postUrl = `https://peterthings.vercel.app${router.asPath}`;
+  const postUrl = `https://doic-neon.vercel.app${router.asPath}`;
 
   // Social Media Share URLs
   const shareLinks = {
