@@ -87,7 +87,7 @@ const SingleBlog = ({ blog }) => {
   return (
     <div className="dark:text-gray-500 border-b border-gray-500 pb-4 transition-all duration-500 group">
       {/* Image du blog */}
-      <div className="w-full h-[150px] overflow-hidden mb-2 hidden rounded-xl relative">
+      <div className="w-full h-[150px] overflow-hidden mb-2 rounded-xl relative">
         <Image
           src={blog.image}
           alt={blog.title}
