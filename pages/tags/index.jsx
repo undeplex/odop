@@ -78,12 +78,12 @@ export default function TagsPage({ tags }) {
       
         </p>
         <div
-       className="flex flex-wrap gap-3 space-y-3 "
+       className="flex flex-wrap gap-3  "
         >
           {tags.map((tag, index) => (
             <Link  href={`/tags/${tag}`}>
             <div
-              key={index} className="border hover:border-blue-600 hover:text-blue-600 text-center px-4 py-3 rounded-full">
+              key={index} className="border hover:border-blue-600 hover:text-blue-600 text-center text-sm px-4 py-3 rounded-full">
               {tag}
             </div>
             </Link>
