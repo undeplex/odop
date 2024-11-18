@@ -92,7 +92,7 @@ const SingleBlog = ({ blog }) => {
           src={blog.image}
           alt={blog.title}
           fill
-          className="object-cover rounded-xl group-hover:scale-[110%] group-hover:rotate-[2deg] group-hover:transition-all duration-500"
+          className="object-cover hidden rounded-xl group-hover:scale-[110%] group-hover:rotate-[2deg] group-hover:transition-all duration-500"
           placeholder="blur"
           blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkZGRkIiAvPjwvc3ZnPg=="
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
