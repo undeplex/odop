@@ -112,7 +112,7 @@ const BlogPost = ({ blog, contentHtml, relatedBlogs,relatedPostsByAuthor }) => {
 
   // Social Media Share URLs
   const shareLinks = {
-    facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(postUrl)}`,
+    facebook: `https://www.m.facebook.com/sharer/sharer.php?u=${encodeURIComponent(postUrl)}`,
     twitter: `https://twitter.com/intent/tweet?url=${encodeURIComponent(postUrl)}&text=${encodeURIComponent(title)}`,
     linkedin: `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(postUrl)}&title=${encodeURIComponent(title)}`,
     pinterest: `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(postUrl)}&media=${encodeURIComponent(image)}&description=${encodeURIComponent(description)}`,
