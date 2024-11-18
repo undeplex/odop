@@ -117,14 +117,14 @@ const FeaturedSection = ({ featuredPosts }) => {
                 <span>{format(new Date(mainPost.date), 'MMMM dd, yyyy')}</span>
               </div>
            
-{/* <div>
+<div>
 
               {mainPost.tags.map((tag) => (
             <Link key={tag} href={`/tags/${tag}`}>
               <span className="mx-2 dark:text-gray-100 rounded-full  px-3 py-1  border-2 border-r-gray-100 hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-600 duration-300 transition-all">{tag}</span>
             </Link>
           ))}
-</div> */}
+</div> 
             
             </div>
             
@@ -132,7 +132,7 @@ const FeaturedSection = ({ featuredPosts }) => {
           
 
               </div>
-              <span className="mx-2 absolute top-3 right-3 dark:text-gray-100 rounded-full  px-3 py-1  text-2xl border-r-gray-100 hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-600 duration-300 transition-all underline">{mainPost.category.toUpperCase()}</span>
+              <span className="mx-2 absolute top-3 right-3 dark0 bg-white text-gray-800 rotate-[9deg] rounded-full  px-3 py-4  text-xl border-r-gray-100 hover:border-blue-600 hover:text-blue-600 dark:hover:text-blue-600 duration-300 transition-all  underline">{mainPost.category.toUpperCase()}</span>
 
             </div>
           </Link>
