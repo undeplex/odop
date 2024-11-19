@@ -114,14 +114,13 @@ const SingleBlog = ({ blog }) => {
             placeholder="blur"
             blurDataURL="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZGRkZGRkIiAvPjwvc3ZnPg=="
           />
-          <span className="dark:text-gray-50 text-gray-700">{blog.author}</span>
-          <div className="text-sm text-blue-500 mb-1">{blog.category}</div>
-        </div>
+       
 
         <div className="text-gray-600 flex justify-between mt-3 dark:text-gray-300 text-sm">
           <div>{format(new Date(blog.date), 'MMMM dd, yyyy')}</div>
           <p className="flex items-center gap-2">{calculateReadingTime(blog.content)}</p>
         </div>
+   <span className="dark:text-gray-200 text-gray-600">By {blog.author}</span>
       </Link>
     </div>
   );
