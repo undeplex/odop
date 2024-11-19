@@ -324,7 +324,7 @@ return (
        </div>
           <p className=" text-sm">
             
-            <p className="dark:text-gray-50">Written By: {author}   • {elapsedTime} </p>
+            <p className="dark:text-gray-50">Written By: {author}  </p>
           <div className="text-gray-600 mb-1 text-m dark:text-gray-300 ">{format(new Date(date), 'MMMM dd, yyyy')}</div>
 </p>
         </div>
