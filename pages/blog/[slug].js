@@ -322,8 +322,8 @@ return (
             className=" size-full ring-4 object-cover rounded-full  mb-6"
           />
        </div>
-          <p className=" text-lg ">
-            <p>Cet article a été écrit par:</p>
+          <p className=" text-sm">
+            <p>Ecrit Par:</p>
             <p className="dark:text-gray-50">{author}   • {elapsedTime} </p></p>
         </div>
         <div className="mb-6 font-normal dark:text-gray-300 text-gray-700 ">{description}</div>
