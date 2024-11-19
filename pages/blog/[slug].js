@@ -323,8 +323,10 @@ return (
           />
        </div>
           <p className=" text-sm">
-            <p>Ecrit Par:</p>
-            <p className="dark:text-gray-50">{author}   • {elapsedTime} </p></p>
+            
+            <p className="dark:text-gray-50">Written By: {author}   • {elapsedTime} </p>
+          <div className="text-gray-600 mb-1 text-m dark:text-gray-300 ">{format(new Date(date), 'MMMM dd, yyyy')}</div>
+</p>
         </div>
         <div className="mb-6 font-normal dark:text-gray-300 text-gray-700 ">{description}</div>
         <div className="md:flex-col lg:flex-row flex-col flex gap-5 justify-betwee items-center my-3">
